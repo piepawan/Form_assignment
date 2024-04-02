@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="college.png" alt="Centennial College Logo">
+        <h1>CENTENNIAL COLLEGE Continuing Education Course/Instructor Evaluation</h1>
+    </header>
+    <div class="container">
+        <p>Please read each statement carefully and consider each one individually. Use the computer card to make your choice (use a pencil to fill in the space). Give only one answer for each question.</p>
+        <form>
+            <label for="course-name">Course Name/Code:</label>
+            <input type="text" id="course-name" name="course-name" required>
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="Fall">Fall</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring/Summer">Spring/Summer</option>
+            </select>
+            <label for="Year">Year:</label>
+            <input type="date" id="instructor" name="instructor" required>
+
+            <label for="course-name">Instructor</label>
+            <input type="text" id="course-name" name="course-name" required>
+
+          
+            <label for="instructor">Instructor:</label>
+
+            <fieldset>
+                <legend>How would you rate the instructor's:</legend>
+                <label for="knowledge">1. Knowledge of subject?</label>
+                <input type="radio" id="knowledge-excellent" name="knowledge" value="Excellent"> Excellent
+                <input type="radio" id="knowledge-good" name="knowledge" value="Good"> Good
+                <input type="radio" id="knowledge-fair" name="knowledge" value="Fair"> Fair
+                <input type="radio" id="knowledge-unsatisfactory" name="knowledge" value="Not Satisfactory"> Not Satisfactory
+
+                <label for="helpfulness">2. Helpfulness?</label>
+                <input type="radio" id="helpfulness-excellent" name="helpfulness" value="Excellent"> Excellent
+                <input type="radio" id="helpfulness-good" name="helpfulness" value="Good"> Good
+                <input type="radio" id="helpfulness-fair" name="helpfulness" value="Fair"> Fair
+                <input type="radio" id="helpfulness-unsatisfactory" name="helpfulness" value="Not Satisfactory"> Not Satisfactory
+
+                <label for="courtesy">3. Courtesy and respect for all students?</label>
+                <input type="radio" id="courtesy-excellent" name="courtesy" value="Excellent"> Excellent
+                <input type="radio" id="courtesy-good" name="courtesy" value="Good"> Good
+                <input type="radio" id="courtesy-fair" name="courtesy" value="Fair"> Fair
+                <input type="radio" id="courtesy-unsatisfactory" name="courtesy" value="Not Satisfactory"> Not Satisfactory
+
+                <label for="communication">4. Communication skills?</label>
+                <input type="radio" id="communication-excellent" name="communication" value="Excellent"> Excellent
+                <input type="radio" id="communication-good" name="communication" value="Good"> Good
+                <input type="radio" id="communication-fair" name="communication" value="Fair"> Fair
+                <input type="radio" id="communication-unsatisfactory" name="communication" value="Not Satisfactory"> Not Satisfactory
+
+                <label for="performance">5. Overall performance?</label>
+                <input type="radio" id="performance-excellent" name="performance" value="Excellent"> Excellent
+                <input type="radio" id="performance-good" name="performance" value="Good"> Good
+                <input type="radio" id="performance-fair" name="performance" value="Fair"> Fair
+                <input type="radio" id="performance-unsatisfactory" name="performance" value="Not Satisfactory"> Not Satisfactory
+            </fieldset>
+            <label for="instructor">Course</label>
+            <fieldset>
+                <label for="materials">6. How would you rate the course materials?</label>
+                <input type="radio" id="materials-excellent" name="materials" value="Excellent"> Excellent
+                <input type="radio" id="materials-good" name="materials" value="Good"> Good
+                <input type="radio" id="materials-fair" name="materials" value="Fair"> Fair
+                <input type="radio" id="materials-unsatisfactory" name="materials" value="Not Satisfactory"> Not Satisfactory
+
+                <label for="expectations">7. How much did this course meet your expectations?</label>
+                <input type="radio" id="expectations-excellent" name="expectations" value="Excellent"> Excellent
+                <input type="radio" id="expectations-good" name="expectations" value="Good"> Good
+                <input type="radio" id="expectations-fair" name="expectations" value="Fair"> Fair
+                <input type="radio" id="expectations-unsatisfactory" name="expectations" value="Not Satisfactory"> Not Satisfactory
+
+                <label for="overall-course">8. How would you rate this course (overall)?</label>
+                <input type="radio" id="overall-course-excellent" name="overall-course" value="Excellent"> Excellent
+                <input type="radio" id="overall-course-good" name="overall-course" value="Good"> Good
+                <input type="radio" id="overall-course-fair" name="overall-course" value="Fair"> Fair
+                <input type="radio" id="overall-course-unsatisfactory" name="overall-course" value="Not Satisfactory"> Not Satisfactory
+            </fieldset>
+
+            <fieldset>
+                <legend>General Information</legend>
+                <label for="course-outline">9. Was the course outline reviewed/explained at the beginning of your course?</label><br>
+                <input type="radio" name="course-outline" value="Yes"> Yes<br>
+                <input type="radio" name="course-outline" value="No"> No<br>
+                <input type="radio" name="course-outline" value="Not Sure"> Not Sure
+            </fieldset>
+
+            <fieldset>
+                <legend>10. Would you recommend this course to a friend with the same interests?</legend>
+                <input type="radio" name="recommend" value="Yes"> Yes<br>
+                <input type="radio" name="recommend" value="No"> No<br>
+                <input type="radio" name="recommend" value="Not Sure"> Not Sure
+            </fieldset>
+
+            <label for="best-thing">11. What is the best thing about this course?</label><br>
+            <textarea id="best-thing" name="best-thing"></textarea><br>
+
+            <label for="improve-course">12. How could we improve this course?</label><br>
+            <textarea id="improve-course" name="improve-course"></textarea><br>
+
+            <label for="other-comments">13. Other:</label><br>
+            <textarea id="other-comments" name="other-comments"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <footer>
+            <p>Thank you! We pay attention to your feedback!</p>
+            <p>Web: <a href="https://www.centennialcollege.ca/continuingeducation">www.centennialcollege.ca/continuingeducation</a> Email: <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
